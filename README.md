@@ -5,6 +5,9 @@ A very basic global pen pal management system created with SpringBoot and React 
 ##### - While adding a user to the system, the following details have to be provided
   - Name
   - Username
-  - email
-  - Message (About Me)
+  - Age
+  - Gender
+  - Email
+  - Country
+  - Message
   - Profile Picture
