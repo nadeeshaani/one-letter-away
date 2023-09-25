@@ -37,6 +37,14 @@ export default function AddUser() {
                 </div>
 
                 <div className='mb-3'>
+  <label htmlFor='profileImage' className='form-label'>
+    Profile Image
+  </label>
+  <input type="file" className='form-control' name='profileImage' accept='image/*' />
+</div>
+
+
+                <div className='mb-3'>
                     <label htmlFor='Age' className='form-label'>
                         Age
                     </label>
