@@ -36,6 +36,39 @@ export default function AddUser() {
                     name='email'/>
                 </div>
 
+                <div className='mb-3'>
+                    <label htmlFor='Age' className='form-label'>
+                        Age
+                    </label>
+                    <input type={"number"}
+                    className='form-control'
+                    placeholder='Enter your age'
+                    name='age'/>
+                </div>
+
+                <div className='mb-3'>
+                    <label htmlFor='Country' className='form-label'>
+                        Country
+                    </label>
+                    <input type={"text"}
+                    className='form-control'
+                    placeholder='Enter your country'
+                    name='country'/>       
+                </div>
+
+                <div className='mb-3'>
+                    <label htmlFor='Country' className='form-label mx-2'>
+                        Gender
+                    </label>
+                    <select id="gender" name="gender">
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+  <option value="Other">Other</option>
+</select>     
+                </div>
+
+
+
                 <button type="Submit" className='btn btn-outline-primary'>Submit</button>
                 <button type="Cancel" className='btn btn-outline-danger mx-2'>Cancel</button>
 
