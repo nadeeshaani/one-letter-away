@@ -3,7 +3,6 @@ package com.nadeeshani.fullstack.backend.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import jakarta.persistence.Lob;
 
 @Entity
 public class User {
@@ -12,9 +11,19 @@ public class User {
     private Long id;
     private String username;
     private String name;
+    private String email;
     private String message;
-    @Lob
-    private byte[] profileImage;
+    private String profileImageUrl;
+
+    public String getProfileImageUrl() {
+        return profileImageUrl;
+    }
+
+    public void setProfileImageUrl(String profileImageUrl) {
+        this.profileImageUrl = profileImageUrl;
+    }
+
+
 
     public Long getId() {
         return id;
@@ -48,11 +57,11 @@ public class User {
         this.message = message;
     }
 
-    public byte[] getProfileImage() {
-        return profileImage;
+    public String getEmail() {
+        return email;
     }
 
-    public void setProfileImage(byte[] profileImage) {
-        this.profileImage = profileImage;
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
