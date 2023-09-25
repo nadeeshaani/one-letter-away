@@ -41,7 +41,11 @@ export default function Home() {
         <td>{user.country}</td>
         <td>{user.email}</td>
         <td>{user.message}</td>
-        <td></td>
+        <td className='d-flex align-items-center'>
+            <button className="btn btn-dark mx-2">View</button>
+            <button className="btn btn-outline-dark mx-2">Edit</button>
+            <button className="btn btn-outline-danger mx-2">Delete</button>
+        </td>
         
 
       </tr>
