@@ -25,6 +25,8 @@ export default function Home() {
       <th scope="col">profile picture</th>
       <th scope="col">Username</th>
       <th scope="col">Country</th>
+      <th scope="col">Age</th>
+      <th scope="col">Gender</th>
       <th scope="col">email</th>
       <th scope="col">message</th>
       <th scope="col">Action</th>
@@ -39,6 +41,8 @@ export default function Home() {
         <td><img width="100px" height="100px" src={user.profileImageUrl} alt={`Image for ${user.username}`} /></td>
         <td>{user.username}</td>
         <td>{user.country}</td>
+        <td>{user.age}</td>
+        <td>{user.gender}</td>
         <td>{user.email}</td>
         <td>{user.message}</td>
         <td className='d-flex align-items-center'>

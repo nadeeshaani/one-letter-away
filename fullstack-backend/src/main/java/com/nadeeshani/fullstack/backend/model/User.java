@@ -15,6 +15,8 @@ public class User {
     private String email;
     private String message;
     private String profileImageUrl;
+    private int age;
+    private String gender;
 
     public String getProfileImageUrl() {
         return profileImageUrl;
