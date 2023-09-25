@@ -11,6 +11,7 @@ public class User {
     private Long id;
     private String username;
     private String name;
+    private String country;
     private String email;
     private String message;
     private String profileImageUrl;
@@ -64,4 +65,13 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
 }
