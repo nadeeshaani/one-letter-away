@@ -19,6 +19,12 @@ export default function AddUser() {
         setUser({...user,[e.target.name]:e.target.value})
     }
 
+    const onImageChange = (e) => {
+        const file = e.target.files[0];
+        setUser({ ...user, profileImage: file });
+      };
+      
+
   return (
     <div className='container'>
         <div className="row">
@@ -64,7 +70,7 @@ export default function AddUser() {
   <label htmlFor='profileImage' className='form-label'>
     Profile Image
   </label>
-  <input type="file" className='form-control' name='profileImage' accept='image/*' value={profileImage} onChange={(e)=>onInputChange(e)}/>
+  <input type="file" className='form-control' name='profileImage' accept='image/*' onChange={onImageChange}/>
 </div>
 
 
