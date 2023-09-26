@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
     const [users,setUsers]=useState([])
@@ -47,7 +48,7 @@ export default function Home() {
         <td>{user.message}</td>
         <td className='d-flex align-items-center'>
             <button className="btn btn-dark mx-2">View</button>
-            <button className="btn btn-outline-dark mx-2">Edit</button>
+            <Link className="btn btn-outline-dark mx-2" to={`/edituser/${user.id}`}>Edit</Link>
             <button className="btn btn-outline-danger mx-2">Delete</button>
         </td>
         
