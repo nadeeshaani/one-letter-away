@@ -33,28 +33,33 @@ export default function Home() {
     </tr>
   </thead>
   <tbody>
-    {
-        users.map((user, index)=>
-        <tr>
-        <th scope="row" key={index}>{index+1}</th>
-        <td>{user.name}</td>
-        <td><img width="100px" height="100px" src={user.profileImageUrl} alt={`Image for ${user.username}`} /></td>
-        <td>{user.username}</td>
-        <td>{user.country}</td>
-        <td>{user.age}</td>
-        <td>{user.gender}</td>
-        <td>{user.email}</td>
-        <td>{user.message}</td>
-        <td className='d-flex align-items-center'>
-            <button className="btn btn-dark mx-2">View</button>
-            <button className="btn btn-outline-dark mx-2">Edit</button>
-            <button className="btn btn-outline-danger mx-2">Delete</button>
-        </td>
-        
-
-      </tr>
-        )
-    }
+  {
+    users.map((user) => (
+        <tr key={user.id}>
+            <th scope="row">{user.id}</th>
+            <td>{user.name}</td>
+            <td>
+                <img
+                    width="100px"
+                    height="100px"
+                    src={user.profileImageUrl}
+                    alt={`Image for ${user.username}`}
+                />
+            </td>
+            <td>{user.username}</td>
+            <td>{user.country}</td>
+            <td>{user.age}</td>
+            <td>{user.gender}</td>
+            <td>{user.email}</td>
+            <td>{user.message}</td>
+            <td className='d-flex align-items-center'>
+                <button className="btn btn-dark mx-2">View</button>
+                <button className="btn btn-outline-dark mx-2">Edit</button>
+                <button className="btn btn-outline-danger mx-2">Delete</button>
+            </td>
+        </tr>
+    ))
+}
 
    
     
