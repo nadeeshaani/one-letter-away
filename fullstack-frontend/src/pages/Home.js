@@ -30,7 +30,7 @@ export default function Home() {
             <tr>
               <th scope="col">id</th>
               <th scope="col">Name</th>
-              <th scope="col">profile picture</th>
+              {/* <th scope="col">profile picture</th> */}
               <th scope="col">Username</th>
               <th scope="col">Country</th>
               <th scope="col">Age</th>
@@ -46,15 +46,20 @@ export default function Home() {
                 <th scope="row" key={index}>
                   {index + 1}
                 </th>
-                <td>{user.name}</td>
-                <td>
+                <td>{user.name}<br></br><br></br><img
+                    width="100px"
+                    height="100px"
+                    src={user.profileImageUrl}
+                    alt={`Image for ${user.username}`}
+                  /><br></br><br></br></td>
+                {/* <td>
                   <img
                     width="100px"
                     height="100px"
                     src={user.profileImageUrl}
                     alt={`Image for ${user.username}`}
                   />
-                </td>
+                </td> */}
                 <td>{user.username}</td>
                 <td>{user.country}</td>
                 <td>{user.age}</td>
